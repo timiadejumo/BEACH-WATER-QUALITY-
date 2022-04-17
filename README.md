@@ -20,7 +20,7 @@ The datasets used for this project are all open-sourced and hosted on the City o
 The second dataset contains observations recorded by weather sensors located at the beaches.
 
 ### Data Preparation
-We used a variety of Python libraries to carry-out this project, most especially Pandas v1.1.3, Numpy v1.18.5, SciKit-Learn v0.23.2 and Matplotlib v3.3.1.
+We used a variety of Python libraries to carry-out this project, most especially Pandas v1.1.3, Numpy v1.18.5, SciKit-Learn v0.23.2, Seaborn 0.11.0  and Matplotlib v3.3.1.
 
 The dataset came as 2 separate files: one containing the target variable and other beach water readings and the other had the readings from the beach weather stations. To start, we merged the two files and started the bigger task of cleaning.
 
