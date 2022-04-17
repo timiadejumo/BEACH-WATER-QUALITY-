@@ -27,7 +27,29 @@ The dataset came as 2 separate files: one containing the target variable and oth
 ### Data Cleaning
 The combined dataframe had 27 columns. 13 of the columns were dropped for one of several reasons: they were identification values, highly multicollinear with other columns or had a high percentage of null values.  We dropped this columns as inputting the wrong data could cause problems further down the line with our models. Categorical variables were OneHotEncoded. Every numerical feature that went into the third and fourth models were scaled.
 
-## MODELING
+### Feature Selection
+The dummy model and First Simple Model made use of only numeric variables. Subsequent models incorporated the categorical variables, with oversampling of the minority class of the dependent variable to address the imbalance. For the third model, the numeric variables were standard scaled. The parameters for the decision tree were optimized using gridsearch.
+the following charts show the relationship between some of the features selected and the target variable (turbidity level).
 
+
+
+
+
+## MODELING
+This project makes use of predictive modeling (logistic regression) and inferential modeling (decision trees). The first three models are logistic regression models and the fourth is a decision tree classifier.  I used both models because the target is multi-class. The metric of choice is accuracy because I am concerned about reducing both Type I and Type II errors. A false classification has one of two consequences:
+- Swimmers are allowed into infected waters and could fall sick, or
+- Beach activities are restricted and leads to economic losses.
+
+All models attained the following accuracy scores on test data:
+- Dummy Classifier:    90%
+- First Simple Model:   89.9%
+- Second Logistic Model:    76.8%
+- Third Logistic regression model:    85.6%
+- Decision Tree classifier:   95.7%
 
 ## CONCLUSION
+In conclusion, our model can predict the turbidity level of beach water at an accuracy of 96% using observations from the weather stations and readings from the transducers located at the beaches. The readings at taken hourly, as such, rather than the current 4-hour wait time, this model can give a run the numbers and in a matter of seconds return the current turbidity level of the beach water.
+
+## FUTURE RESEARCH
+- Using ensemble modelling technique, there could be an improvement in the predictive power of my model
+- Use neural networks to forecast beach water quality as a time series.
