@@ -31,6 +31,18 @@ The combined dataframe had 27 columns. 13 of the columns were dropped for one of
 The dummy model and First Simple Model made use of only numeric variables. Subsequent models incorporated the categorical variables, with oversampling of the minority class of the dependent variable to address the imbalance. For the third model, the numeric variables were standard scaled. The parameters for the decision tree were optimized using gridsearch.
 the following charts show the relationship between some of the features selected and the target variable (turbidity level).
 
+### Chart 1. Air Temperature(•C) vs. Turbidity Level
+![](img/Air_Temperature_(C)_vs_Turbidity_Level.png)
+
+### Chart 2. Total Rain (in.) vs. Turbidity Level
+![](img/TotalRainvsTurbidityLevel.png)
+
+### Chart 3. Turbidity (NTU) vs. Wave Period (seconds)
+![](img/TurbidityNTUvsWavePeriodsec.png)
+
+### Chart 4. Water Temperature (•C) vs. Turbidity Level
+![](img/WaterTemperatureCvsTurbidityLevel.png)
+
 
 
 ## MODELING
