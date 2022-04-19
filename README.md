@@ -83,3 +83,5 @@ In conclusion, our model can predict the turbidity level of beach water at an ac
 ## 5. FUTURE RESEARCH
 - Study beaches individually to unravel the relationship between geological/geographical features on water quality at each location
 - Study the relationship between human activities at/around each loaction to water quality
+
+For more information on the Beach Water Quality Analysis project see the [presentation slides](BWQ_Presentation.pdf).
