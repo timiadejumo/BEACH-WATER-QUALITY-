@@ -43,15 +43,15 @@ Data sources:
 - https://data.cityofchicago.org/Parks-Recreation/Beach-Weather-Stations-Automated-Sensors/k7hf-8y75
 - https://data.cityofchicago.org/Parks-Recreation/Beach-Water-Quality-Automated-Sensors/qmqz-2xku
 
-### 2a Data Preparation
+### 2a. Data Preparation
 We used a variety of Python libraries to carry-out this project, most especially Pandas v1.1.3, Numpy v1.18.5, SciKit-Learn v0.23.2, Seaborn 0.11.0  and Matplotlib v3.3.1.
 
 The dataset came as 2 separate files: one containing the target variable and other beach water readings and the other had the readings from the beach weather stations. To start, we merged the two files and started the bigger task of cleaning.
 
-### 2b Data Cleaning
+### 2b. Data Cleaning
 The combined dataframe had 27 columns. 13 of the columns were dropped for one of several reasons: they were identification values, highly multicollinear with other columns or had a high percentage of null values.  We dropped this columns as inputting the wrong data could cause problems further down the line with our models. Categorical variables were OneHotEncoded. Every numerical feature that went into the third and fourth models were scaled.
 
-### 2c Feature Selection
+### 2c. Feature Selection
 The dummy model and First Simple Model made use of only numeric variables. Subsequent models incorporated the categorical variables, with oversampling of the minority class of the dependent variable to address the imbalance. For the third model, the numeric variables were standard scaled. The parameters for the decision tree were optimized using gridsearch.
 the following charts show the relationship between some of the features selected and the target variable (turbidity level).
 
@@ -65,7 +65,7 @@ the following charts show the relationship between some of the features selected
 
 
 
-## 3 MODELING
+## 3. MODELING
 This project makes use of predictive modeling (logistic regression) and inferential modeling (decision trees). The first three models are logistic regression models and the fourth is a decision tree classifier.  I used both models because the target is multi-class. The metric of choice is accuracy because I am concerned about reducing both Type I and Type II errors. A false classification has one of two consequences:
 - Swimmers are allowed into infected waters and could fall sick, or
 - Beach activities are restricted and leads to economic losses.
@@ -77,9 +77,9 @@ All models attained the following accuracy scores on test data:
 - Third Logistic regression model:    85.6%
 - Decision Tree classifier:   95.7%
 
-## 4 CONCLUSION
+## 4. CONCLUSION
 In conclusion, our model can predict the turbidity level of beach water at an accuracy of 96% using observations from the weather stations and readings from the transducers located at the beaches. The readings at taken hourly, as such, rather than the current 4-hour wait time, this model can give a run the numbers and in a matter of seconds return the current turbidity level of the beach water.
 
-## 5 FUTURE RESEARCH
+## 5. FUTURE RESEARCH
 - Study beaches individually to unravel the relationship between geological/geographical features on water quality at each location
 - Study the relationship between human activities at/around each loaction to water quality
