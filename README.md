@@ -18,6 +18,9 @@ The main goal of this project is to minimize the closure periods due to the time
 The datasets used for this project are all open-sourced and hosted on the City of Chicago Parks and Recreation portal. All observations are readings from weather stations and self-powered buoys located on the beach waters taken between May, 2013 and October, 2017. There are two datasets I am deploying: the first from the buoys located at the beaches records water quality, or turbidity. (Turbidity is the measure of relative clarity of a liquid. It is an optical characteristic of water and is a measurement of the amount of light that is scattered by material in the water when a light is shined through the water sample. The higher the intensity of scattered light, the higher the turbidity. Material that causes water to be turbid include clay, silt, very tiny inorganic and organic matter, algae, dissolved colored organic compounds, and plankton and other microscopic organisms.)
 
 The second dataset contains observations recorded by weather sensors located at the beaches.
+Data sources: 
+- https://data.cityofchicago.org/Parks-Recreation/Beach-Weather-Stations-Automated-Sensors/k7hf-8y75
+- https://data.cityofchicago.org/Parks-Recreation/Beach-Water-Quality-Automated-Sensors/qmqz-2xku
 
 ### Data Preparation
 We used a variety of Python libraries to carry-out this project, most especially Pandas v1.1.3, Numpy v1.18.5, SciKit-Learn v0.23.2, Seaborn 0.11.0  and Matplotlib v3.3.1.
