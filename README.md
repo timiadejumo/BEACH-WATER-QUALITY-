@@ -31,17 +31,13 @@ The combined dataframe had 27 columns. 13 of the columns were dropped for one of
 The dummy model and First Simple Model made use of only numeric variables. Subsequent models incorporated the categorical variables, with oversampling of the minority class of the dependent variable to address the imbalance. For the third model, the numeric variables were standard scaled. The parameters for the decision tree were optimized using gridsearch.
 the following charts show the relationship between some of the features selected and the target variable (turbidity level).
 
-### Chart 1. Air Temperature(•C) vs. Turbidity Level
-![](img/Air_Temperature_(C)_vs_Turbidity_Level.png)
+![AirTempvsTurbidityLevel](img/AirTemperature(C)vsTurbidityLevel(1).png)
 
-### Chart 2. Total Rain (in.) vs. Turbidity Level
-![](img/TotalRainvsTurbidityLevel.png)
+![TotalRainvsTurbidity Level](img/TotalRainvsTurbidityLevel(1).png)
 
-### Chart 3. Turbidity (NTU) vs. Wave Period (seconds)
-![](img/TurbidityNTUvsWavePeriodsec.png)
+![TurbidityvsWavePeriod](img/Turbidity(NTU)vsWavePeriod(sec)(1).png)
 
-### Chart 4. Water Temperature (•C) vs. Turbidity Level
-![](img/WaterTemperatureCvsTurbidityLevel.png)
+![WaterTemperaturevsTurbidityLevel](img/WaterTemperature(C)vsTurbidityLevel(1).png)
 
 
 
@@ -61,5 +57,5 @@ All models attained the following accuracy scores on test data:
 In conclusion, our model can predict the turbidity level of beach water at an accuracy of 96% using observations from the weather stations and readings from the transducers located at the beaches. The readings at taken hourly, as such, rather than the current 4-hour wait time, this model can give a run the numbers and in a matter of seconds return the current turbidity level of the beach water.
 
 ## FUTURE RESEARCH
-- Using ensemble modelling technique, there could be an improvement in the predictive power of my model
-- Use neural networks to forecast beach water quality as a time series.
+- Study beaches individually to unravel the relationship between geological/geographical features on water quality at each location
+- Study the relationship between human activities at/around each loaction to water quality
